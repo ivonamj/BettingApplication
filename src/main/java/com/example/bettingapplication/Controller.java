@@ -22,7 +22,9 @@ public class Controller {
     }
 
     @PostMapping("/matches")
-    public void AddBetslip(@RequestBody Betslip betslip) { serviceBM.addBetslip(betslip); }
+    public void AddBetslip(@RequestBody Betslip betslip) { 
+        serviceBM.addBetslip(betslip);
+    }
 
     @GetMapping("/betslip")
     public List<ResultBetslips> GetBetslips() {
